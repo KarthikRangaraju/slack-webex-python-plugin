@@ -3,6 +3,15 @@ A slack webex slash command implementation in python.
 Basically a webhook that will be called by slack whenever the /webex slash command is used in slack chat.
 Users can start a webex session using "/webex start" or join a user's webex room using "/webex join @slackuser"
 
+For example,
+
+`/webex start` - When a slack user with slack username "krangaraju" executes this slash command, the following message is sent(via a bot) to the same channel where the command was executed: `@krangaraju has started a webex session. Join: http://company.webex.com/meet/krangaraju`
+
+`/webex join @slackuser` - When a slack user with slack username "krangaraju" executes this slash command to join another slack user's webex say "svishwakarma", It will generate the following message that is only visible to you(via a bot): `Click here to join svishwakarma's webex room: http://castlighthealth.webex.com/meet/svishwakarma`
+
+# Note
+This is based on the assumption that your slack and webex account in your company both use a common LDAP username. 
+
 # Installation
 Setup the following environment variables
 
