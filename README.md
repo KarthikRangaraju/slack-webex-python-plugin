@@ -29,6 +29,10 @@ Your company specific URL that will be used to generate meeting URLs. For exampl
 uses "/webex join @someuser" slash command, http://company.webex.com/meet/someuser will be generated and returned
 to the user.
 
+`export SLACK_BOT_USER_NAME="YourCustomBotNameHere"`
+
+Based on the above configuration, the bot name will be used while sending messages on slack.
+
 # Running the server
 `python app.py`
 
